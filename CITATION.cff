@@ -1,0 +1,26 @@
+# CITATION.cff for testpick — commit at the repo root as CITATION.cff
+cff-version: 1.2.0
+title: testpick
+message: "If you use this software, please cite it as below."
+version: 0.1.0
+date-released: 2026-11-21
+authors:
+  - family-names: Sampathi
+    given-names: Shiva
+repository-code: https://github.com/agentbantu-wq/testpick
+license: MIT
+abstract: >-
+  Run only the tests your change can actually affect. A Go CLI that reads
+  the files a change touches and proposes exactly which test suites CI
+  should run: by file-name convention, by same-package tests, and by
+  walking the reverse import graph, so a change to a deep dependency
+  selects the tests of everything that depends on it, transitively. New
+  test files get a suggested rerun count, so flaky tests get shaken out
+  before they block a merge. Deterministic and local-only: no LLM, no
+  network, no test execution.
+keywords:
+  - continuous-integration
+  - testing
+  - test-selection
+  - go
+  - site-reliability-engineering
